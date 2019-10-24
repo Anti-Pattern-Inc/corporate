@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Anti-Pattern Inc.</title>
+    <meta content="このページは株式会社アンチパターン(英名:Anti-Pattern Inc.)のコーポレートサイトです。経営理念や事業内容、会社概要などをご紹介しています。" name="description">
+    <link rel="shortcut icon" href="img/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
+    <script>
+      $(function(){
+        $('a[href^="#"]').click(function() {
+          var speed = 400;
+          var href= $(this).attr("href");
+          var target = $(href == "#" || href == "" ? 'html' : href);
+          var position = target.offset().top;
+          $('body,html').animate({scrollTop:position}, speed, 'swing');
+          return false;
+        });
+      });
+      document.addEventListener('DOMContentLoaded', () => {
+        const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+          if ($navbarBurgers.length > 0) {
+            $navbarBurgers.forEach( el => {
+              el.addEventListener('click', () => {
+                const target = el.dataset.target;
+                const $target = document.getElementById(target);
+                el.classList.toggle('is-active');
+                $target.classList.toggle('is-active');
+              });
+            });
+          }
+      });
+    </script>
+    <style>
+      .background {
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 0;
+        z-index: 0;
+      }
+      canvas {
+        width: 100%;
+        height: 100%;
+      }
+      .fa-building .fa-code {
+        font-size: 6em;
+      }
+      .innovation-logo {
+        margin-top: 40px;
+      }
+      .service-link:hover {
+        opacity: 0.8;
+      }
+    </style>
+  </head>
+  <body class="layout-default">
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="">
+          <img src="img/AP_name_logo.png" alt="株式会社アンチパターンの社名入りロゴ">
+        </a>
+        <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item" href="#mission">
+            Mission
+          </a>
+          <a class="navbar-item"href="#services">
+            Services
+          </a>
+          <a class="navbar-item"href="#customers">
+            Customers
+          </a>
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link">
+              More
+            </a>
+            <div class="navbar-dropdown">
+              <a class="navbar-item" href="#otherInformetion">
+                Other Informetion
+              </a>
+              <hr class="navbar-divider">
+              <a class="navbar-item" href="https://twitter.com/antipatterninc" target="_blank">
+                Twitter
+              </a>
+              <a class="navbar-item" href="https://www.facebook.com/Anti-Pattern-Inc-405308950323951/" target="_blank">
+                Facebook
+              </a>
+              <a class="navbar-item" href="https://medium.com/anti-pattern-engineering" target="_blank">
+                Blog(Medium)
+              </a>
+              <!-- <a class="navbar-item" href="">
+                Wantedly
+              </a> -->
+            </div>
+          </div>
+        </div>
+        <div class="navbar-end">
+          <div class="navbar-item">
+            <!-- <div class="buttons">
+              <a class="button is-success" href="">
+                <strong>CONTACT</strong>
+              </a>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <section id="mission" class="bd-index-fullscreen hero is-fullheight is-light">
+        <canvas class="background"></canvas>
+        <div class="hero-body">
+          <div class="container has-text-centered" style="">
+            <header class="bd-index-header">
+              <h1 class="title is-1 is-spaced">Our Mission</h1>
+              <h2 class="subtitle is-2">
+                日本のソフトウェアエンジニアを憧れの職業へ
+              </h2>
+            </header>
+          </div>
+        </div>
+      </section>
+      <section id="values" class="hero is-medium">
+        <div class="hero-body">
+          <div class="container has-text-centered bd-index-header">
+            <header class="bd-index-header">
+              <h3 class="title is-3">Our Values</h3>
+            <header>
+          </div>
+          <div class="columns">
+            <div class="column">
+              <div class="notification is-primary has-text-centered">
+                <p class="title">Be Healthy</p>
+                  <!-- <button class="button is-primary is-large modal-button" data-target="modal" aria-haspopup="true">Be Healthy</button> -->
+              </div>
+            </div>
+            <div class="column">
+              <div class="notification is-primary has-text-centered">
+                <p class="title">Ownership</p>
+              </div>
+            </div>
+            <div class="column">
+              <div class="notification is-primary has-text-centered">
+                <p class="title">Bias For Action</p>
+              </div>
+            </div>
+            <div class="column">
+              <div class="notification is-primary has-text-centered">
+                <p class="title">Don’t Be Closed</p>
+              </div>
+            </div>
+          </div>
+          <div class="columns">
+            <div class="column">
+              <div class="notification is-primary has-text-centered">
+                <p class="title">Don’t to be 2x</p>
+              </div>
+            </div>
+            <div class="column">
+              <div class="notification is-primary has-text-centered">
+                <p class="title">Don’t Be Afraid of Failure</p>
+              </div>
+            </div>
+            <div class="column">
+              <div class="notification is-primary has-text-centered">
+                <p class="title">Don’t Repeat Yourself</p>
+              </div>
+            </div>
+            <div class="column">
+              <div class="notification is-primary has-text-centered">
+                <p class="title">Work as Play</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="services" class="hero is-medium is-light">
+        <div class="hero-body">
+          <div class="container has-text-centered bd-index-header">
+            <header class="bd-index-header">
+              <h3 class="title is-3">Our Services</h3>
+            <header>
+          </div>
+          <div class="bd-focus">
+            <div class="columns">
+              <div class="column has-text-centered">
+                <i style="font-size: 6em;" class="fas fa-code"></i>
+                <p class="title is-4">
+                  <br />
+                 <strong>Software Engineering Service</strong>
+                </p>
+                <p class="subtitle is-6">
+                  SES事業<br/>
+                  我々は、様々な企業に対して、ソフトウェア開発の支援事業を行なっております。これまで、SaaSの開発やメディアの開発で培った経験から、
+                  主に<strong>Webサービス</strong>の開発経験に強みがあります。また、インフラ構築の技術にも定評があります。
+                </p>
+              </div>
+              <div class="column has-text-centered">
+                <a class="service-link" href="https://harbors.anti-pattern.co.jp/" target="_blank"><i style="font-size: 6em;" class="fas fa-anchor"></i></a>
+                <p class="title is-4">
+                  <br />
+                  <strong><a class="service-link" href="https://harbors.anti-pattern.co.jp/" target="_blank">HarborS</a></strong>
+                </p>
+                <p class="subtitle is-6">エンジニア向け<strong>コワーキングスペース</strong>事業<br />
+                  ソフトウェアエンジニアリングに関わる全てのビジネスパーソンにソフトウェアエンジニアリングに適したオフィス空間を提供しています。
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="customers" class="hero is-medium">
+        <div class="hero-body">
+          <div class="container has-text-centered">
+            <header class="bd-index-header">
+              <h3 class="title is-3">Our Customers</h3>
+              <p></p>
+            </header>
+            <div class="columns is-mobile is-multiline is-centered">
+              <div class="column is-one-quarter innovation-logo">
+                <img src="img/Innovation_442×59.jpg" alt="株式会社イノベーションのロゴ">
+              </div>
+              <div class="column is-one-quarter">
+                <img src="img/mcury_logo.jpg" alt="株式会社マーキュリーのロゴ">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="otherInformetion" class="hero is-medium is-light">
+        <div class="hero-body">
+          <header class="bd-index-header has-text-centered" style="">
+            <h3 class="title is-3">
+              <strong>Other Informetion</strong>
+            </h3>
+            <p></p>
+          </header>
+          <div class="tile is-ancestor">
+            <div class="tile is-4 is-vertical is-parent">
+              <div class="tile is-child box">
+                <p class="title">Links</p>
+                <ul>
+                  <li><a href="https://twitter.com/antipatterninc" target="_blank">・Twitter</a></li>
+                  <li><a href="https://www.facebook.com/Anti-Pattern-Inc-405308950323951/" target="_blank">・Facebook</a></li>
+                  <li><a href="https://medium.com/anti-pattern-engineering" target="_blank">・Blog(Medium)</a></li>
+                  <!-- <li><a href="" target="_blank">・Wantedly(未定)</a></li> -->
+                </ul>
+              </div>
+              <!-- <div class="tile is-child box">
+                <p class="title">Contact</p>
+                <p>Please <a style="text-decoration: underline" href="" target="_blank">contact us</a> if you have any questions.</p>
+              </div> -->
+            </div>
+            <div class="tile is-parent">
+              <div class="tile is-child box">
+                <p class="title">About Us</p>
+                <ul>
+                  <li>会社名(英文名): 株式会社アンチパターン(Anti-Pattern Inc.)</li>
+                  <li>資本金: 50,000千円</li>
+                  <li>代表取締役社長: 小笹佑京</li>
+                  <li>設立年月日: 2019年7月1日</li>
+                  <li>本社: 東京都渋谷区猿楽町12-1</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <script>
+        var particles = Particles.init({
+          selector: '.background',
+          sizeVariations: 50,
+          color: ['#86c5d0', '#4FABBA', '#cae5ea'],
+          connectParticles: true
+        });
+      </script>
+    </main>
+    <footer class="footer">
+      <div class="content has-text-centered">
+        <p>
+          ©︎ 2019 Anti-Pattern Inc.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
