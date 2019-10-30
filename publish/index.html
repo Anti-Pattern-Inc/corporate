@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
     <script>
       $(function(){
         $('a[href^="#"]').click(function() {
@@ -36,16 +35,11 @@
       });
     </script>
     <style>
-      .background {
-        position: absolute;
-        display: block;
-        top: 0;
-        left: 0;
-        z-index: 0;
+      .mission {
+        background-color: #4FABBA;
       }
-      canvas {
-        width: 100%;
-        height: 100%;
+      #mission > div > div > header > h1, #mission > div > div > header > h2 {
+        color: #FFF;
       }
       .fa-building .fa-code {
         font-size: 6em;
@@ -114,8 +108,7 @@
       </div>
     </nav>
     <main>
-      <section id="mission" class="bd-index-fullscreen hero is-fullheight is-light">
-        <canvas class="background"></canvas>
+      <section id="mission" class="mission bd-index-fullscreen hero is-fullheight">
         <div class="hero-body">
           <div class="container has-text-centered" style="">
             <header class="bd-index-header">
@@ -274,14 +267,6 @@
           </div>
         </div>
       </section>
-      <script>
-        var particles = Particles.init({
-          selector: '.background',
-          sizeVariations: 50,
-          color: ['#86c5d0', '#4FABBA', '#cae5ea'],
-          connectParticles: true
-        });
-      </script>
     </main>
     <footer class="footer">
       <div class="content has-text-centered">
