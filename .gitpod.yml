@@ -1,0 +1,5 @@
+tasks:
+  - init: echo "Replace me with a build script for the project."
+    command: export NGINX_DOCROOT_IN_REPO=docs ; /etc/init.d/nginx restart
+image:
+  file: .gitpod.Dockerfile
