@@ -1,0 +1,81 @@
+$color-primary: #013D73;
+$color-blue-2: #003C73;
+$color-blue-3: #1e7cd0;
+$color-blue-4: #5D9DD7;
+$color-blue-main: #4fabba;
+$color-blue-button: #4fabba;
+
+$color-lightblue: #B9D0E5;
+$color-lightblue2: #E7EDF2;
+$color-black: #333;
+$color-white: #fff;
+$color-gray: #F5F5F5;
+$color-gray2: #bdbdbd;
+
+$font-japanese: 'Noto Sans JP', "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", sans-serif;
+$font-english: 'nobel-bold', 'Noto Sans JP', sans-serif, 'Lato', sans-serif;
+$font-english-regular: 'Nobel-Regular', 'Noto Sans JP', sans-serif, 'Lato', sans-serif;
+$font-number: 'Roboto Condensed', sans-serif;
+
+$mobile: 768px;
+$pc: 960px;
+
+@mixin mq($type: sp, $rule: null) {
+  @if $type == sp {
+    @if $rule == max or $rule == null {
+      @media screen and (max-width: $mobile - 1) {
+        @content;
+      }
+    } @else {
+      @media screen and (min-width: $mobile) {
+        @content;
+      }
+    }
+  } @else if $type == pc {
+    @if $rule == min or $rule == null {
+      @media screen and (min-width: $pc) {
+        @content;
+      }
+    } @else {
+      @media screen and (max-width: $pc - 1) {
+        @content;
+      }
+    }
+  } @else if $type == tb {
+    @media screen and (min-width: $mobile) and (max-width: $pc - 1) {
+      @content;
+    }
+  } @else if $type == xs {
+    @media screen and (max-width: 374px) {
+      @content;
+    }
+  }
+}
+
+@function get_vw($size, $viewport:375){
+  @return ( 100 / $viewport ) * $size * 1vw;
+}
+
+
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.box_base:after {
+  position: absolute;
+  content: '';
+  display: inline-block;
+  z-index: 0;
+}
+.box_red:after {
+  background-color: #ED644C;
+}
+.box_light_blue:after {
+  background-color: #4FABBA;
+}
+.box_blue:after {
+  background-color: #4C83ED;
+}
+.box_brown:after {
+  background-color: #C39682;
+}
+.box_grey:after {
+  background-color: #454A54;
+}
