@@ -1,0 +1,95 @@
+extends ../_includes/_layout.pug
+
+append variables
+  //- Required
+  - var pageID = "services";
+  - var pageTitle = "サービス";
+  - var pageDescription = site.description;
+  //- Optional
+  - var pageOgpImage = site.ogpImage
+  - var pageOgpType = "website";
+
+block styles
+  link(rel="stylesheet" type="text/css" href="../css/pages/service.min.css")
+
+
+block content
+  section.keyvisual
+    p
+      span.key_title_main SERVICE
+      span.key_title_sub サービス
+  div.wrapper-wrapper
+    div.wrapper
+      div.top_ourService.container_bg
+        .top_ourService01
+          h3 BUSINESS CONCEPT
+        img(src="../img/anti-pattern__cervice.png" alt="サービスイメージ図").pc_img
+        img(src="../img/ap_pirammid_sp.png" alt="サービスイメージ図").sp_img
+      div.top_ourService
+        h3.serviseList_h3 SERVISE LIST
+      .community_support
+        h3.title コミュニティ形成支援
+        .serviselist
+          .servise_img
+            img(src="../img/harbors.svg" alt="harbors").harbors_img_sizing
+          .servise_text
+            h4 HarborS
+              span.reduction ハーバーズ
+            p テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります
+            a(href="https://harbors.anti-pattern.co.jp/").bule.under_var SERVICE SITE
+              span.site_link
+                img(src="../img/service-link-icon.png", alt="サイトリンク")
+      .community_support
+        h3.title.skill_up スキルアップ系
+        .serviselist.posse
+          .servise_img
+            img(src="../img/posse.svg" alt="posse").posse_img_sizing
+          .servise_text
+            h4 POSSE
+              span.reduction ポッセ
+            p テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります
+            a(href="https://posse.anti-pattern.co.jp/").bule.under_var SERVICE SITE
+              span.site_link
+                img(src="../img/service-link-icon.png", alt="サイトリンク")
+        .serviselist
+          .servise_img
+            img(src="../img/extendsLogo_420.png" alt="extends").extends_img_sizing
+          .servise_text
+            h4.extends extends
+              span.reduction エクステンズ
+            p テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります
+            a(href="https://harbors.anti-pattern.co.jp/extends/").bule.under_var SERVICE SITE
+              span.site_link
+                img(src="../img/service-link-icon.png", alt="サイトリンク")
+      .community_support.matchting
+        h3.title マッチング系
+        .serviselist
+          .servise_img
+            img(src="../img/engineed.svg" alt="engineed").enjineed_img_sizing
+          .servise_text
+            h4 enjineed
+              span.reduction エンジニード
+            p テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります
+            a(href="https://earlybird.engineed.io/").bule.under_var SERVICE SITE
+              span.site_link
+                img(src="../img/service-link-icon.png", alt="サイトリンク")
+        .serviselist
+          .servise_img
+            img(src="../img/nitro.svg" alt="nitro").nitoro_img_sizing
+          .servise_text
+            h4 NITRO
+              span.reduction ニトロ
+            p テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります
+            a(href="#").bule.under_var SERVICE SITE
+              span.site_link
+                img(src="../img/service-link-icon.png", alt="サイトリンク")
+        .serviselist
+          .servise_img
+            img(src="../img/gateway.png" alt="gateway").gateway_img_sizing
+          .servise_text
+            h4.servise_text_pc Gateway
+              span.reduction ゲートウェイ
+            p テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります
+            a(href="#").bule.under_var SERVICE SITE
+              span.site_link
+                img(src="../img/service-link-icon.png", alt="サイトリンク")

@@ -1,0 +1,182 @@
+.footer_nav {
+  padding-bottom: 12px;
+}
+.footer {
+  background-color: $color-blue-main;
+  color: $color-white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.footer__inner {
+  padding-right: 20px;
+  padding-left: 20px;
+  max-width: 1140px;
+  margin-top: 18px;
+  margin-bottom: 61px;
+  // padding-right: 30px;
+  // padding-left: 30px;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.footer_1 {
+  font-weight: bold;
+}
+.sns_icons {
+  display: flex;
+  flex-wrap: wrap;
+  a {
+    color: white;
+  }
+  a:hover {
+    color: white;
+  }
+}
+.sns_icon_item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  .sns_name {
+    letter-spacing: 0px;
+    font-size: 12px;
+    font-family: $font-english;
+    margin-bottom: 2px;
+  }
+}
+.sns_logo {
+  margin-right: 7px;
+  img{
+    width: 25px;
+    height: auto;
+  }
+}
+.li_logo {
+  img {
+    width: 29px;
+  }
+}
+.sns_icon_item {
+  margin-right: 29px;
+  letter-spacing: -1px;
+}
+.engineer_blog {
+  margin-bottom: 20px;
+  a {
+    color: white;
+  }
+  a:hover {
+    color: white;
+  }
+  .engineer_blog_text {
+    // margin-bottom: 20px;
+    letter-spacing: 0;
+  }
+  .engineer_blog_icon {
+    margin-left: 6px;
+    img {
+      height: 9px;
+      width: auto;
+    }
+  }
+}
+.footer_navs {
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+.footer_nav {
+  a {
+    color: $color-white;
+  }
+  margin-left: 21px;
+}
+.footer_2 {
+  text-align: right;
+  margin-top: 38px;
+  .footer_navs {
+    letter-spacing: 0;
+    margin-bottom: 20px;
+  }
+}
+.copyright {
+  color: #397984;
+  font-weight: bold;
+  letter-spacing: 0;
+}
+footer {
+  .arrow{
+    position: absolute;
+    right: 15%;
+    display: inline-block;
+    padding: 0 0 0 18px;
+    color: #000;
+    vertical-align: middle;
+    text-decoration: none;
+    font-size: 15px;
+    
+  }
+  .arrow::before,
+  .arrow::after{
+    position: absolute;
+    right: -101px;
+    top: -43px;
+    bottom: 0;
+    // right: 50px;
+    margin: auto;
+    content: "";
+    vertical-align: middle;
+  }
+  .arrow::after {
+    top: -36px;
+  }
+}
+.footer_jump::before{
+  box-sizing: border-box;
+  width: 59px;
+  height: 59px;
+  border: 1px solid #fff;
+  background: #fff;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  box-shadow: 1px 4px 4px 1px rgba(0,0,0,0.3);
+}
+.footer_jump::after{
+  left: 58px;
+  top: -30px;
+  width: 10px;
+  height: 10px;
+  border-top: 3px solid #4FABBA;
+  border-right: 3px solid #4FABBA;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+@media (max-width:727px){
+  .footer {
+    background-color: $color-blue-main;
+    color: $color-white;
+    padding-top: 25px;
+    padding-left: 0px;
+    padding-bottom: 20px;
+  }
+  .footer_2 {
+    text-align: left;
+  }
+  .footer_navs {
+    margin-bottom: 18px;
+  }
+  .footer_nav {
+    margin-left: 0px;
+    margin-right: 21px;
+  }
+  .arrow::before,
+  .arrow::after {
+    left: -74px;
+    right: -57px;
+    top: -56px;
+    bottom: 9px;
+  }
+  .arrow::after {
+    top: -49px;
+  }
+}

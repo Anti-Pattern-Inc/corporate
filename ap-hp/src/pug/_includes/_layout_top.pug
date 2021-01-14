@@ -1,0 +1,63 @@
+block variables
+  //- Required
+  - var pageID = "";
+  - var pageTitle = "";
+  - var pageDescription = site.description;
+  //- Optional
+  - var pageOgpImage = site.ogpImage
+  - var pageOgpType = "website";
+
+html(lang="ja")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    meta(name="format-detection" content="telephone=no")
+    if pageTitle
+      title #{pageTitle} | #{site.name}
+    else
+      title #{site.name}
+    meta(name="description" content=pageDescription)
+    if pageID
+      link(rel="canonical" href=site.rootUrl + pageID + '/')
+    else
+      link(rel="canonical" href=site.rootUrl)
+    
+    link(rel="shortcut icon" href="/img/favicon.ico")
+    link(rel="stylesheet" type="text/css" href="/css/main.min.css")
+    link(rel="preconnect", href="https://fonts.gstatic.com")
+    link(href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet")
+    block styles
+    script(src='/js/jquery-3.5.1.min.js')
+    block scripts
+
+    //- OGP
+    if pageTitle
+      meta(property="og:title" content=pageTitle + ' | ' + site.name)
+    else
+      meta(property="og:title" content=site.name)
+    meta(property="og:type" content=pageOgpType)
+    if pageOgpImage
+      meta(property="og:image" content=pageOgpImage)
+    if pageID
+      meta(property="og:url" content=site.rootUrl + pageID + '/')
+    else
+      meta(property="og:url" content=site.rootUrl)
+    meta(property="og:description" content=pageDescription)
+    meta(property="og:site_name" content=site.name)
+    meta(property="og:locale" content=site.lang)
+
+    //- OGP Facebook insights
+    meta(property="fb:app_id" content="")
+
+    //- OGP Twitter Cards
+    if pageOgpImage
+      meta(name="twitter:card" content="summary_large_image")
+      meta(name="twitter:site" content=site.twitter)
+  body
+    include ./_header_top
+    .container
+      block content
+    include ./_footer
+  script.
+  script(src="/js/main.js")

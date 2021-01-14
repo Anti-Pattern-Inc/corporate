@@ -1,0 +1,76 @@
+/**
+ * @section Base Styles
+ */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+html,
+body {
+    font-size: 62.5%;
+}
+@font-face {
+	font-family: 'nobel-bold';
+	src: url(/font/nobel-bold.ttf);
+}
+body {
+    margin: 0;
+    padding: 0;
+    color: rgb(51, 51, 51);
+    font-family: $font-japanese;
+    font-size: 1.4rem;
+    line-height: 1.6;
+    overflow-x: hidden;
+    letter-spacing: 0.07em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    // font-family: 'Noto Sans JP', sans-serif;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: rgb(51, 51, 51);
+}
+
+input,
+textarea,
+select,
+button {
+	font: inherit;
+}
+
+.sp-visible {
+    display: none;
+
+    @include mq(sp) {
+        display: block;
+    }
+}
+
+.sp-hidden {
+    @include mq(sp) {
+        display: none;
+    }
+}
+
+.container {
+    background-color: #F8F8F8;
+}
