@@ -1,7 +1,7 @@
 @import "../variables";
 @import "../mixins";
 .box09:after {
-  left: 56px;
+  right: 56px;
   top: 2271px;
   padding-top: 6.5%;
   width: 6.5%;
@@ -14,7 +14,7 @@
   }
 }
 .box08:after {
-  left: 0;
+  right: 0;
   top: 2157px;
   padding-top: 12.5%;
   width: 9%;
@@ -28,7 +28,7 @@
 }
 .box07:after {
   left: 78px;
-  top: 1540px;
+  top: 1400px;
   padding-top: 5%;
   width: 5%;
   z-index: 10;
@@ -41,7 +41,7 @@
 }
 .box06:after {
   right: 71px;
-  top: 1309px;
+  top: 1188px;
   padding-top: 6.5%;
   width: 6.5%;
   z-index: 10;
@@ -68,8 +68,8 @@
 .box04:after {
   left: 33px;
   top: 746px;
-  padding-top: 9%;
-  width: 9%;
+  padding-top: 6%;
+  width: 6%;
   z-index: 9;
   @include mq(sp){
     left: -41px;
