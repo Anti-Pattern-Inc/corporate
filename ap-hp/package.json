@@ -1,15 +1,11 @@
 {
-	"name": "project-name",
-	"version": "0.0.1",
-	"description": "A description for your project.",
+	"name": "anti-pattern_corporate_website",
+	"version": "1.0.0",
+	"description": "anti-pattern_corporate_website",
 	"main": "./dist/your-main-js-file.js",
 	"author": {
-		"name": "YOUR NAME",
-		"url": "http://link-to-your-website.com"
-	},
-	"repository": {
-		"type": "git",
-		"url": "http://link-to-your-git-repo.com"
+		"name": "Anti-Pattern Inc.",
+		"url": "https://anti-pattern.co.jp/"
 	},
 	"boilerplate": {
 		"version": "2.2.6",
