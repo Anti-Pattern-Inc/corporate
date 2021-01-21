@@ -1,0 +1,35 @@
+header.header.header_top(name="top" id="top")
+  div.header__inner
+    div.header_logoSide
+      a(href="/")
+        img(src="/img/anti-pattern_logo.svg", alt="ロゴ")
+      ul.pc_navs
+        li.pc_nav_item.nav_service
+          a(href="/services/") サービス
+        li.pc_nav_item.nav_company
+          a(href="/company/") 会社概要
+        //- li.pc_nav_item.nav_news
+        //-   a(href="/news/").news_active ニュース
+    div.header_buttonSide
+      a(href="https://docs.google.com/forms/d/e/1FAIpQLSd0kJB1wJCNdXCi9NDz9OTKuuBllPPylh_jTCNaVZfSdra2RQ/viewform").rounded-btn お問い合わせ
+    a.menu
+      span.menu__line.menu__line--top
+      span.menu__line.menu__line--bottom
+    nav.gnav
+      .gnav__logo
+        a(href="#")
+          img(src="/img/anti-pattern_logo_white.svg", alt="株式会社アンチパターン")
+      .gnav__wrap
+        ul.gnav__nemu
+          li.gnav__menu__item
+            a(href="/services/") サービス
+          li.gnav__menu__item
+            a(href="/company/") 会社概要
+          //- li.gnav__menu__item
+          //-   a(href="/news/") ニュース
+          li.gnav__menu__item
+            a(href="https://docs.google.com/forms/d/e/1FAIpQLSd0kJB1wJCNdXCi9NDz9OTKuuBllPPylh_jTCNaVZfSdra2RQ/viewform") お問い合わせ
+          li.gnav__menu__item.nav_legal
+            a(href="/legal/") 個人情報の取り扱い等
+          //- li.gnav__menu__item.nav_useful
+          //-   a(href="/useful_infomation/") お役立ち情報
