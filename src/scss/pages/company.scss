@@ -1190,7 +1190,7 @@
   position: relative;
   z-index: 50;
   font-family: $font-english;
-  margin-top: -22px;
+  margin-top: 0px;
   letter-spacing: 0;
   color: #4fabba;
   font-size: 24px;
@@ -1385,6 +1385,17 @@
       }
     }
   }
+  .outline_table_item_phone {
+    padding-top: 39px;
+    padding-bottom: 41px;
+    .mini_info {
+      display: inline-block;
+      margin-left: 7px;
+      margin-bottom: 2px;
+      letter-spacing: 0.4px;
+      font-size: 13px;
+    }
+  }
   .outline_table_item_member {
     padding-top: 41px;
     padding-bottom: 41px;
@@ -1416,6 +1427,28 @@
     }
   }
   .outline_table_item_sns {
+    padding-top: 39px;
+    padding-bottom: 41px;
+    .mini_info {
+      display: inline-block;
+      margin-left: 7px;
+      margin-bottom: 2px;
+      letter-spacing: 0.4px;
+      font-size: 13px;
+    }
+  }
+  .outline_table_item_dispatch {
+    padding-top: 39px;
+    padding-bottom: 41px;
+    .mini_info {
+      display: inline-block;
+      margin-left: 7px;
+      margin-bottom: 2px;
+      letter-spacing: 0.4px;
+      font-size: 13px;
+    }
+  }
+  .outline_table_item_employment_placement {
     padding-top: 39px;
     padding-bottom: 41px;
     .mini_info {

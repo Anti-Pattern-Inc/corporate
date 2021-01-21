@@ -344,7 +344,7 @@
     padding-top: 4%;
     @include mq(sp) {
         right: 89px;
-        top: 509px;
+        top: 446px;
         width: 8%;
         padding-top: 8%;
     }
@@ -356,7 +356,7 @@
     width: 10%;
     @include mq(sp) {
         right: 20px;
-        top: 442px;
+        top:  380px;
         padding-top: 22%;
         width: 22%;
     }
@@ -544,24 +544,22 @@
     img {
         width: 150px;
         height: auto;
-        margin: 0 46px 30px;
+        margin: 0 20px 30px;
     }
     .top_nitro_img {
         width: 95px;
-        margin-left: 57px;
+        margin-left: 20px;
     }
     .top_harbors_img {
         width: 108px;
-        margin-bottom: 32px;
     }
     .top_extends_img {
         width: 128px;
-        margin-top: -2px;
-        margin-left: 22px;
+        margin-top: 0px;
+        margin-left: 0px;
     }
     .top_engineed_img {
         width: 160px;
-        margin-bottom: 32px;
     }
     margin: 0 auto 0;
     margin-top: 52px;
@@ -971,32 +969,28 @@
         img {
             width: 100px;
             height: auto;
-            margin: 0 0px 0px;
+            margin: 0 10px;
         }
         .top_posse_img {
-            margin-left: 0;
+            margin-left: 10px;
         }
         .top_nitro_img {
             width: 62px;
-            margin-left: 30px;
-            margin-right: 38px;
+            margin-left: 10px;
+            margin-right: 10px;
             margin-top: 2px;
         }
         .top_harbors_img {
             width: 71px;
-            margin-bottom: -7px;
-            margin-right: 15px;
+            margin-bottom: 0px;
         }
         .top_extends_img {
             width: 81px;
-            margin-top: 28px;
-            margin-left: 10px;
+            margin-top: 25px;
         }
         .top_engineed_img {
             width: 102px;
             margin-bottom: 0px;
-            margin-left: 31px;
-            padding-bottom: 6px;
         }
         margin: 0 auto 2px;
         margin-top: 33px;

@@ -1644,7 +1644,7 @@ z
   position: relative;
   z-index: 50;
   font-family: "nobel-bold", "Noto Sans JP", sans-serif, "Lato", sans-serif;
-  margin-top: -22px;
+  margin-top: 0px;
   letter-spacing: 0;
   color: #4fabba;
   font-size: 24px;
@@ -1882,47 +1882,60 @@ z
     letter-spacing: 0.4px;
   }
   /* line 1388, src/scss/pages/company.scss */
+  .outline_table_item_phone {
+    padding-top: 39px;
+    padding-bottom: 41px;
+  }
+  /* line 1391, src/scss/pages/company.scss */
+  .outline_table_item_phone .mini_info {
+    display: inline-block;
+    margin-left: 7px;
+    margin-bottom: 2px;
+    letter-spacing: 0.4px;
+    font-size: 13px;
+  }
+  /* line 1399, src/scss/pages/company.scss */
   .outline_table_item_member {
     padding-top: 41px;
     padding-bottom: 41px;
   }
-  /* line 1391, src/scss/pages/company.scss */
+  /* line 1402, src/scss/pages/company.scss */
   .outline_table_item_member .mini_info {
     letter-spacing: 0;
     font-size: 13px;
     display: inline-block;
     margin-left: 9px;
   }
-  /* line 1398, src/scss/pages/company.scss */
+  /* line 1409, src/scss/pages/company.scss */
   .outline_table_item_capital {
     padding-top: 39px;
     padding-bottom: 41px;
   }
-  /* line 1401, src/scss/pages/company.scss */
+  /* line 1412, src/scss/pages/company.scss */
   .outline_table_item_capital .mini_info {
     letter-spacing: 0;
     font-size: 13px;
     display: inline-block;
     margin-left: 6px;
   }
-  /* line 1408, src/scss/pages/company.scss */
+  /* line 1419, src/scss/pages/company.scss */
   .outline_table_item_main_plant_owner {
     padding-top: 39px;
     padding-bottom: 41px;
   }
-  /* line 1411, src/scss/pages/company.scss */
+  /* line 1422, src/scss/pages/company.scss */
   .outline_table_item_main_plant_owner .mini_info {
     letter-spacing: 0;
     font-size: 13px;
     display: inline-block;
     margin-left: 6px;
   }
-  /* line 1418, src/scss/pages/company.scss */
+  /* line 1429, src/scss/pages/company.scss */
   .outline_table_item_sns {
     padding-top: 39px;
     padding-bottom: 41px;
   }
-  /* line 1421, src/scss/pages/company.scss */
+  /* line 1432, src/scss/pages/company.scss */
   .outline_table_item_sns .mini_info {
     display: inline-block;
     margin-left: 7px;
@@ -1930,19 +1943,45 @@ z
     letter-spacing: 0.4px;
     font-size: 13px;
   }
-  /* line 1430, src/scss/pages/company.scss */
+  /* line 1440, src/scss/pages/company.scss */
+  .outline_table_item_dispatch {
+    padding-top: 39px;
+    padding-bottom: 41px;
+  }
+  /* line 1443, src/scss/pages/company.scss */
+  .outline_table_item_dispatch .mini_info {
+    display: inline-block;
+    margin-left: 7px;
+    margin-bottom: 2px;
+    letter-spacing: 0.4px;
+    font-size: 13px;
+  }
+  /* line 1451, src/scss/pages/company.scss */
+  .outline_table_item_employment_placement {
+    padding-top: 39px;
+    padding-bottom: 41px;
+  }
+  /* line 1454, src/scss/pages/company.scss */
+  .outline_table_item_employment_placement .mini_info {
+    display: inline-block;
+    margin-left: 7px;
+    margin-bottom: 2px;
+    letter-spacing: 0.4px;
+    font-size: 13px;
+  }
+  /* line 1463, src/scss/pages/company.scss */
   .container_bg .memver_wrapper {
     margin-bottom: -37px;
   }
-  /* line 1434, src/scss/pages/company.scss */
+  /* line 1467, src/scss/pages/company.scss */
   .outline_table01 .outline_table_item:last-child {
     border-bottom: solid 0px #eeeeee;
   }
-  /* line 1439, src/scss/pages/company.scss */
+  /* line 1472, src/scss/pages/company.scss */
   .outline_table02 .outline_table_item {
     margin-right: auto;
   }
-  /* line 1443, src/scss/pages/company.scss */
+  /* line 1476, src/scss/pages/company.scss */
   .center_shifter {
     margin-right: auto;
     margin-left: auto;
@@ -1954,24 +1993,24 @@ z
         -ms-flex-align: center;
             align-items: center;
   }
-  /* line 1450, src/scss/pages/company.scss */
+  /* line 1483, src/scss/pages/company.scss */
   .memver_wrapper {
     margin-top: auto;
     opacity: 1;
     background-color: #f8f8f8;
   }
-  /* line 1455, src/scss/pages/company.scss */
+  /* line 1488, src/scss/pages/company.scss */
   .footer {
     margin-top: -37px;
   }
 }
 
 @media (max-width: 400px) {
-  /* line 1461, src/scss/pages/company.scss */
+  /* line 1494, src/scss/pages/company.scss */
   .section {
     max-width: 295px;
   }
-  /* line 1464, src/scss/pages/company.scss */
+  /* line 1497, src/scss/pages/company.scss */
   .cards {
     margin: 0 17px;
     display: grid;
@@ -1982,7 +2021,7 @@ z
     /* カード内の中央寄せ解除 */
     margin-bottom: 17px;
   }
-  /* line 1475, src/scss/pages/company.scss */
+  /* line 1508, src/scss/pages/company.scss */
   .center_shifter {
     margin-left: -17px;
     width: 313px;
@@ -1996,7 +2035,7 @@ z
 }
 
 @media (max-width: 1192px) {
-  /* line 1483, src/scss/pages/company.scss */
+  /* line 1516, src/scss/pages/company.scss */
   .servise_img, .servise_text {
     margin-right: auto;
     margin-left: auto;
