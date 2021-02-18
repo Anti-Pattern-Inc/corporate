@@ -1,5 +1,4 @@
-/*! anti-pattern_corporate_website v1.0.0 | (c) 2021 Anti-Pattern Inc. |  License | https://github.com/Anti-Pattern-Inc/corporate */
-/* line 61, src/scss/_variables.scss */
+/* line 67, src/scss/_variables.scss */
 .box_base:after {
   position: absolute;
   content: '';
@@ -7,32 +6,32 @@
   z-index: 0;
 }
 
-/* line 67, src/scss/_variables.scss */
+/* line 73, src/scss/_variables.scss */
 .box_red:after {
   background-color: #ED644C;
 }
 
-/* line 70, src/scss/_variables.scss */
+/* line 76, src/scss/_variables.scss */
 .box_light_blue:after {
   background-color: #4FABBA;
 }
 
-/* line 73, src/scss/_variables.scss */
+/* line 79, src/scss/_variables.scss */
 .box_blue:after {
   background-color: #4C83ED;
 }
 
-/* line 76, src/scss/_variables.scss */
+/* line 82, src/scss/_variables.scss */
 .box_brown:after {
   background-color: #C39682;
 }
 
-/* line 79, src/scss/_variables.scss */
+/* line 85, src/scss/_variables.scss */
 .box_grey:after {
   background-color: #454A54;
 }
 
-/* line 61, src/scss/_variables.scss */
+/* line 67, src/scss/_variables.scss */
 .box_base:after {
   position: absolute;
   content: '';
@@ -40,27 +39,27 @@
   z-index: 0;
 }
 
-/* line 67, src/scss/_variables.scss */
+/* line 73, src/scss/_variables.scss */
 .box_red:after {
   background-color: #ED644C;
 }
 
-/* line 70, src/scss/_variables.scss */
+/* line 76, src/scss/_variables.scss */
 .box_light_blue:after {
   background-color: #4FABBA;
 }
 
-/* line 73, src/scss/_variables.scss */
+/* line 79, src/scss/_variables.scss */
 .box_blue:after {
   background-color: #4C83ED;
 }
 
-/* line 76, src/scss/_variables.scss */
+/* line 82, src/scss/_variables.scss */
 .box_brown:after {
   background-color: #C39682;
 }
 
-/* line 79, src/scss/_variables.scss */
+/* line 85, src/scss/_variables.scss */
 .box_grey:after {
   background-color: #454A54;
 }
@@ -501,17 +500,6 @@
   }
 }
 
-/* line 364, src/scss/pages/index.scss */
-.header {
-  background-color: rgba(0, 0, 0, 0);
-  padding-top: 25px;
-}
-
-/* line 368, src/scss/pages/index.scss */
-.header_top {
-  background: #fff;
-}
-
 /* line 371, src/scss/pages/index.scss */
 .background {
   background: #f8f8f8;
@@ -862,7 +850,7 @@
   margin-top: 1px;
 }
 
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 950px) {
   /* line 645, src/scss/pages/index.scss */
   .top_news_main h3 {
     margin-left: 15px;
@@ -1088,10 +1076,6 @@
 }
 
 @media (max-width: 925px) {
-  /* line 813, src/scss/pages/index.scss */
-  .header_top {
-    padding-top: 16px;
-  }
   /* line 816, src/scss/pages/index.scss */
   .pc_recruit_text {
     display: none;

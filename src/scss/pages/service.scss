@@ -1,19 +1,19 @@
 
 @import "../variables";
 @import "../mixins";
-.header {
-    background-color:rgba(0,0,0,0);
-    padding-top: 22px;
-}
+// .header {
+//     background-color:rgba(0,0,0,0);
+//     padding-top: 22px;
+// }
 // .menu {
 //   position: fixed;
 // }
 .gnav__nemu {
   margin-bottom: 0px;
 }
-.header_top {
-    background: #fff;
-}
+// .header_top {
+//     background: #fff;
+// }
 .background {
     background: #f8f8f8;
     .wrapper {
@@ -36,7 +36,7 @@
     position: relative;
     padding: 224px 24px 217px 24px;
     text-align: center;
-    color: #00282e;
+    color: $color-dark;
     background-color: transparent;
     background-image : url("/img/hero_img.png") ;
     background-size: cover;
@@ -387,7 +387,7 @@
         position: relative;
         padding: 121px 24px 217px 24px;
         text-align: center;
-        color: #00282e;
+        color: $color-dark;
         background-color: transparent;
         background-image : url("/img/hero_img.png") ;
         background-size: cover;
@@ -599,9 +599,9 @@
     }
 }
 
-.header {
-  background-color: #EEEEEE;
-}
+// .header {
+//   background-color: #EEEEEE;
+// }
 .wrapper {
   max-width: 1220px;
   background: #fff; 
@@ -721,7 +721,7 @@
     font-family: $font-english;
     font-weight: bold;
     font-size: 24px;
-    color: #00282e;
+    color: $color-dark;
     letter-spacing: 1px;
     margin-block-start: 0;
     margin-block-end: 0;
@@ -731,7 +731,7 @@
     .reduction {
       font-size: 12px;
       margin-left: 15px;
-      color: #00282e;
+      color: $color-dark;
 
   }
   }
@@ -799,7 +799,7 @@
     letter-spacing: 1px;
   }
   .nav_service {
-    border-bottom: solid 1px #00282E;
+    border-bottom: solid 1px $color-dark;
   }
 }
 
@@ -812,7 +812,7 @@
   display:block;
   width:62px;
   height:2px;
-  background-color: #00282E;
+  background-color: $color-dark;
   position:absolute;
   bottom: -8px;
   // left:-5px;
@@ -829,9 +829,9 @@
   }
 }
 @media (max-width:950px){
-  .header {
-    padding-top: 16px;
-  }
+  // .header {
+  //   padding-top: 16px;
+  // }
   .wrapper {
     padding-bottom: 66px;
   }

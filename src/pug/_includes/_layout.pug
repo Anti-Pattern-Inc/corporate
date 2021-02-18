@@ -1,13 +1,13 @@
-block variables
-  //- Required
-  - var pageID = "";
-  - var pageTitle = "";
-  - var pageDescription = site.description;
-  //- Optional
-  - var pageOgpImage = site.ogpImage
-  - var pageOgpType = "website";
-
 html(lang="ja")
+  block variables
+    //- Required
+    - var pageID = pageID ? pageID : 'top';
+    - var pageTitle = pageTitle ? pageTitle : '株式会社アンチパターン';
+    - var pageDescription = site.description;
+    //- Optional
+    - var pageOgpImage = site.ogpImage
+    - var pageOgpType = "website";
+
   head
     meta(charset="UTF-8")
     meta(http-equiv="X-UA-Compatible" content="IE=edge")
@@ -29,6 +29,7 @@ html(lang="ja")
     link(href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet")
     block styles
     script(src='/js/jquery-3.5.1.min.js')
+    script(src="/js/main.js")
     block scripts
 
     //- OGP
@@ -54,10 +55,8 @@ html(lang="ja")
     if pageOgpImage
       meta(name="twitter:card" content="summary_large_image")
       meta(name="twitter:site" content=site.twitter)
-  body
+  body(class=pageID)
     include ./_header
     .container
       block content
     include ./_footer
-  script.
-  script(src="/js/main.js")

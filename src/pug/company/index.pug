@@ -1,3 +1,4 @@
+
 extends ../_includes/_layout.pug
 
 append variables
@@ -14,219 +15,225 @@ block styles
 
 
 block content
-  span.box01.box_base.box_blue
-  span.box02.box_base.box_brown
-  span.box03.box_base.box_light_blue
-  span.box04.box_base.box_red
-  span.box05.box_base.box_light_blue
-  span.box06.box_base.box_blue
-  span.box07.box_base.box_blue
-  span.box08.box_base.box_brown
-  span.box09.box_base.box_light_blue
-  section.keyvisual.company_keyvisual
-    p
-      span.key_title_main WHAT IS 
-        |
-        span.sp_br.key_title_main ANTI-PATTERN INC.
+  section.keyvisual
+    h1
+      span.key_title_main(aria-hidden="true")
+        | WHAT IS 
+        br.sp-visible
+        | ANTI-PATTERN INC.
       span.key_title_sub 会社概要
-  .container_bg
-    //- .wrapper
-    //-   .section
-    //-     h3.title WHAT
-    //-     p 現況において、「日本のソフトウェアエンジニアを憧れの職業へ」するには、ソフトウェアエンジニアを目指す人材の数を増やし、優秀なソフトウェアエンジニアを育て、付加価値の高いビジネスとソフトウェアエンジニアを正しくマッチングしていくことで、IT人材の需給ギャップを埋めることを目指していきます。
-    //-       span.first_what
-    //-         br
-    //-         |  Ⅰ.ソフトウェアエンジニアの人口を加増させる
-    //-       br
-    //-       |  Ⅱ.ソフトウェアエンジニアの質を向上させる
-    //-       br
-    //-       |  Ⅲ.ソフトウェアエンジニアに流れるお金を最大化させる
-    //-       br  
-    //-       |  まとめると、上記のアプローチが必要だと私たちは考えており、それらを全て同時にビジネスとして実行しようと画策しています。
-    //-   .section.section_why
-    //-     h3.title WHY
-    //-     p 現況において、「日本のソフトウェアエンジニアを憧れの職業へ」するには、ソフトウェアエンジニアを目指す人材の数を増やし、優秀なソフトウェアエンジニアを育て、付加価値の高いビジネスとソフトウェアエンジニアを正しくマッチングしていくことで、IT人材の需給ギャップを埋めることを目指していきます。
-    //-       span.first_what
-    //-         br
-    //-         |  Ⅰ.ソフトウェアエンジニアの人口を加増させる
-    //-       br
-    //-       |  Ⅱ.ソフトウェアエンジニアの質を向上させる
-    //-       br
-    //-       |  Ⅲ.ソフトウェアエンジニアに流れるお金を最大化させる
-    //-       br  
-    //-       |  まとめると、上記のアプローチが必要だと私たちは考えており、それらを全て同時にビジネスとして実行しようと画策しています。
-    //-   .section.section_how
-    //-     h3.title HOW
-    //-     p 現況において、「日本のソフトウェアエンジニアを憧れの職業へ」するには、ソフトウェアエンジニアを目指す人材の数を増やし、優秀なソフトウェアエンジニアを育て、付加価値の高いビジネスとソフトウェアエンジニアを正しくマッチングしていくことで、IT人材の需給ギャップを埋めることを目指していきます。
-    //-       br
-    //-       |  Ⅰ.ソフトウェアエンジニアの人口を加増させる
-    //-       br
-    //-       |  Ⅱ.ソフトウェアエンジニアの質を向上させる
-    //-       br
-    //-       |  Ⅲ.ソフトウェアエンジニアに流れるお金を最大化させる
-    //-       br  
-    //-       |  まとめると、上記のアプローチが必要だと私たちは考えており、それらを全て同時にビジネス
-    //-       span.pc_only として実行しようと画策しています。
-    .wrapper.outline_wrapper
-      h3.h3.title_outline OUTLINE
-      .outline_table
-        .outline_table01
-          .outline_table_item
-            .center_shifter
-              span.mini_title 会社名
-              span.mini_info 
-                span.sp_br 株式会社アンチパターン   
-                span.Anti-Pattern Anti-Pattern Inc.
-          .outline_table_item.outline_table_item_day
-            .center_shifter
-              span.mini_title 設立
-              span.mini_info 2019年7月1日
-          .outline_table_item.outline_table_item_ceo
-            .center_shifter
-              span.mini_title 代表者名
-              span.mini_info 小笹佑京   
-                |
-                span.ceo_english_name Yuki Ozasa
-          .outline_table_item.outline_table_item_address
-            .center_shifter
-              span.mini_title 所在地
-              span.mini_info 
-                span.sp_br 東京都港区南⻘山
-                  |
-                  span.address_num 3-15-9 
-                span.minowa MINOWA
-                |
-                span 表参道3階
-          .outline_table_item.outline_table_item_phone
-            .center_shifter
-              span.mini_title 代表番号
-              span.mini_info 03-6885-6136
-        .outline_table02
-          .outline_table_item.outline_table_item_member
-            .center_shifter
-              span.mini_title 社員数
-              span.mini_info 22名 (2021年1月1日時点)
-          .outline_table_item.outline_table_item_capital
-            .center_shifter
-              span.mini_title 資本金
-              span.mini_info 50,000千円
-          .outline_table_item.outline_table_item_main_plant_owner
-            .center_shifter
-              span.mini_title 主要株主
-              span.mini_info 小笹佑京
-          .outline_table_item.outline_table_item_dispatch
-            .center_shifter
-              span.mini_title 労働者派遣
-              span.mini_info 派13-314618
-          .outline_table_item.outline_table_item_employment_placement
-            .center_shifter
-              span.mini_title 職業紹介
-              span.mini_info 13-ユ-311813
-  .memver_wrapper.wrapper
-    .h3.title_memver MEMBER
-    .cards_cace
-      .cards
-        .card
-          img(src="/img/ozasa.jpg", alt="team_member")
-          div.member_info
-            h4 YUKI
-              br
-              |OZASA
-            p.post_info 代表取締役社長
-            p.name_info 小笹 佑京
-            p.info_details 
-              |  立教大学卒業後、2014年に (株)イノベーションに入社
-              br
-              |  イノベーションでは、マーケティングオートメーション ツール開発業務に従事
-              br
-              |  2015年全社MVPを受賞 2017年よりマネジャー職 2018年より開発本部⻑歴任
-              br
-              |  2019年7月当社を起業
-        .card
-          img(src="/img/shinoda.jpg", alt="team_member")
-          div.member_info
-            h4 KENJI
-              br
-              |SHINODA
-            p.post_info 取締役
-            p.name_info 信田 健児
-            p.info_details 
-              |  2002年に(株)日立システム アンドサービス(現日立 ソリューションズ)に入社
-              br
-              |  2008年にアクセンチュア (株)に入社 2014年よりマネジャー職
-              br
-              |  2017年10月に(株) イノベーションに入社
-              br
-              |  2018年より同社執行役員及び 同社取締役を歴任
-              br
-              |  2019年7月当社取締役に就任
-        .card
-          img(src="/img/kotani.jpg", alt="team_member")
-          div.member_info
-            h4 YUICHI
-              br
-              |KOTANI
-            p.post_info 取締役
-            p.name_info 小谷 悠一
-            p.info_details 
-              |  14歳の時、初めて手にしたコンピュータをキッカケにソフトウェアエンジニアとして活躍。
-              br
-              |  2017年夏、知人の紹介で株式会社イノベーションへ参画。
-              br
-              |  2019年7月株式会社アンチパターン入社。
-              br
-              |  2020年5月当社取締役に就任。
-        .card
-          img(src="/img/tsukamoto.jpg", alt="team_member")
-          div.member_info
-            h4 TAKESHI
-              br
-              |TSUKAMOTO
-            p.post_info 取締役
-            p.name_info 塚本 岳史
-            p.info_details 
-              |  理工学部出身。プログラミングは大学で習得し、エンジニアとしてキャリアをスタート。
-              br
-              |  2017年夏、知人の紹介で株式会社イノベーションへ参画。
-              br
-              |  2019年7月株式会社アンチパターン入社。
-              br
-              |  2020年5月当社取締役に就任。
-        .card
-          img(src="/img/yamazaki.jpg", alt="team_member")
-          div.member_info
-            h4 HIROFUMI
-              br
-              |YAMAZAKI
-            p.post_info 監査役
-            p.name_info 山﨑 浩史
-            p.info_details 
-              |  1990年(株)クラレ入社。
-              br
-              |  2000年トランス・コスモス株式会社入社。
-              br
-              |  2005年株式会社ザッパラス取締役就任。2010年同社監査役就任。
-              br
-              |  2013年株式会社バロックジャパンリミテッド入社。
-              br
-              |  2018年株式会社イノベーション取締役就任。
-              br
-              |  2019年7月当社監査役に就任。
-        //- .card
-        //-   img(src="/img/photo_dummy.png", alt="team_member")
-        //-   div.member_info
-        //-     h4 YUKI
-        //-       br
-        //-       |OZASA
-        //-     p.post_info 代表取締役社長
-        //-     p.name_info 小笹 佑京
-        //-     p.info_details 
-        //-       |  立教大学卒業後、2014年に (株)イノベーションに入社
-        //-       br
-        //-       |  イノベーションでは、マーケティングオートメーション ツール開発業務に従事
-        //-       br
-        //-       |  2015年全社MVPを受賞 2017年よりマネジャー職 2018年より開発本部⻑歴任
-        //-       br
-        //-       |  2019年7月当社を起業
+  .company-wrapper
+    .company-background-container
+      span.box01.box_base.box_blue
+      span.box02.box_base.box_brown
+      span.box03.box_base.box_light_blue
+      span.box04.box_base.box_red
+      span.box05.box_base.box_light_blue
+      span.box06.box_base.box_blue
+      span.box07.box_base.box_blue
+      span.box08.box_base.box_brown
+      span.box09.box_base.box_light_blue
+      //- .wrapper
+      //-   .section
+      //-     h3.title WHAT
+      //-     p 現況において、「日本のソフトウェアエンジニアを憧れの職業へ」するには、ソフトウェアエンジニアを目指す人材の数を増やし、優秀なソフトウェアエンジニアを育て、付加価値の高いビジネスとソフトウェアエンジニアを正しくマッチングしていくことで、IT人材の需給ギャップを埋めることを目指していきます。
+      //-       span.first_what
+      //-         br
+      //-         |  Ⅰ.ソフトウェアエンジニアの人口を加増させる
+      //-       br
+      //-       |  Ⅱ.ソフトウェアエンジニアの質を向上させる
+      //-       br
+      //-       |  Ⅲ.ソフトウェアエンジニアに流れるお金を最大化させる
+      //-       br  
+      //-       |  まとめると、上記のアプローチが必要だと私たちは考えており、それらを全て同時にビジネスとして実行しようと画策しています。
+      //-   .section.section_why
+      //-     h3.title WHY
+      //-     p 現況において、「日本のソフトウェアエンジニアを憧れの職業へ」するには、ソフトウェアエンジニアを目指す人材の数を増やし、優秀なソフトウェアエンジニアを育て、付加価値の高いビジネスとソフトウェアエンジニアを正しくマッチングしていくことで、IT人材の需給ギャップを埋めることを目指していきます。
+      //-       span.first_what
+      //-         br
+      //-         |  Ⅰ.ソフトウェアエンジニアの人口を加増させる
+      //-       br
+      //-       |  Ⅱ.ソフトウェアエンジニアの質を向上させる
+      //-       br
+      //-       |  Ⅲ.ソフトウェアエンジニアに流れるお金を最大化させる
+      //-       br  
+      //-       |  まとめると、上記のアプローチが必要だと私たちは考えており、それらを全て同時にビジネスとして実行しようと画策しています。
+      //-   .section.section_how
+      //-     h3.title HOW
+      //-     p 現況において、「日本のソフトウェアエンジニアを憧れの職業へ」するには、ソフトウェアエンジニアを目指す人材の数を増やし、優秀なソフトウェアエンジニアを育て、付加価値の高いビジネスとソフトウェアエンジニアを正しくマッチングしていくことで、IT人材の需給ギャップを埋めることを目指していきます。
+      //-       br
+      //-       |  Ⅰ.ソフトウェアエンジニアの人口を加増させる
+      //-       br
+      //-       |  Ⅱ.ソフトウェアエンジニアの質を向上させる
+      //-       br
+      //-       |  Ⅲ.ソフトウェアエンジニアに流れるお金を最大化させる
+      //-       br  
+      //-       |  まとめると、上記のアプローチが必要だと私たちは考えており、それらを全て同時にビジネス
+      //-       span.pc_only として実行しようと画策しています。
+      section.company-section 
+        .company-section-inner
+          h2.util-section-title OUTLINE
+          .outline_table
+            .outline_table01
+              .outline_table_item
+                .center_shifter
+                  span.mini_title 会社名
+                  span.mini_info 
+                    span.sp_br 株式会社アンチパターン   
+                    span.Anti-Pattern Anti-Pattern Inc.
+              .outline_table_item.outline_table_item_day
+                .center_shifter
+                  span.mini_title 設立
+                  span.mini_info 2019年7月1日
+              .outline_table_item.outline_table_item_ceo
+                .center_shifter
+                  span.mini_title 代表者名
+                  span.mini_info 小笹佑京   
+                    |
+                    span.ceo_english_name Yuki Ozasa
+              .outline_table_item.outline_table_item_address
+                .center_shifter
+                  span.mini_title 所在地
+                  span.mini_info 
+                    span.sp_br 東京都港区南⻘山
+                      |
+                      span.address_num 3-15-9 
+                    span.minowa MINOWA
+                    |
+                    span 表参道3階
+              .outline_table_item.outline_table_item_phone
+                .center_shifter
+                  span.mini_title 代表番号
+                  span.mini_info 03-6885-6136
+            .outline_table02
+              .outline_table_item.outline_table_item_member
+                .center_shifter
+                  span.mini_title 社員数
+                  span.mini_info 22名 (2021年1月1日時点)
+              .outline_table_item.outline_table_item_capital
+                .center_shifter
+                  span.mini_title 資本金
+                  span.mini_info 50,000千円
+              .outline_table_item.outline_table_item_main_plant_owner
+                .center_shifter
+                  span.mini_title 主要株主
+                  span.mini_info 小笹佑京
+              .outline_table_item.outline_table_item_dispatch
+                .center_shifter
+                  span.mini_title 労働者派遣
+                  span.mini_info 派13-314618
+              .outline_table_item.outline_table_item_employment_placement
+                .center_shifter
+                  span.mini_title 職業紹介
+                  span.mini_info 13-ユ-311813
 
-
+    section.company-section.company-member
+      .company-section-inner
+        h2.util-section-title MEMBER
+        ul.company-member-list 
+          li.company-member-item 
+            .company-member-item-inner 
+              figure.company-member-figure 
+                img(src="/img/ozasa.jpg", alt="")
+                figcaption 
+                  | YUKI
+                  br
+                  | OZASA
+              .company-member-info 
+                p.company-member-info-name
+                  span.company-member-info-name-inline 代表取締役社長
+                  | 小笹 佑京
+                p.company-member-info-detail
+                  |  立教大学卒業後、2014年に (株)イノベーションに入社
+                  br
+                  |  イノベーションでは、マーケティングオートメーション ツール開発業務に従事
+                  br
+                  |  2015年全社MVPを受賞 2017年よりマネジャー職 2018年より開発本部⻑歴任
+                  br
+                  |  2019年7月当社を起業
+          li.company-member-item 
+            .company-member-item-inner 
+              figure.company-member-figure 
+                img(src="/img/shinoda.jpg", alt="")
+                figcaption 
+                  | KENJI
+                  br
+                  | SHINODA
+              .company-member-info 
+                p.company-member-info-name
+                  span.company-member-info-name-inline 取締役
+                  | 信田 健児
+                p.company-member-info-detail
+                  |  2002年に(株)日立システム アンドサービス(現日立 ソリューションズ)に入社
+                  br
+                  |  2008年にアクセンチュア (株)に入社 2014年よりマネジャー職
+                  br
+                  |  2017年10月に(株) イノベーションに入社
+                  br
+                  |  2018年より同社執行役員及び 同社取締役を歴任
+                  br
+                  |  2019年7月当社取締役に就任
+          li.company-member-item 
+            .company-member-item-inner 
+              figure.company-member-figure 
+                img(src="/img/kotani.jpg", alt="")
+                figcaption 
+                  | YUICHI
+                  br
+                  | KOTANI
+              .company-member-info 
+                p.company-member-info-name
+                  span.company-member-info-name-inline 取締役
+                  | 小谷 悠一
+                p.company-member-info-detail
+                  |  14歳の時、初めて手にしたコンピュータをキッカケにソフトウェアエンジニアとして活躍。
+                  br
+                  |  2017年夏、知人の紹介で株式会社イノベーションへ参画。
+                  br
+                  |  2019年7月株式会社アンチパターン入社。
+                  br
+                  |  2020年5月当社取締役に就任。
+          li.company-member-item 
+            .company-member-item-inner 
+              figure.company-member-figure 
+                img(src="/img/tsukamoto.jpg", alt="")
+                figcaption 
+                  | TAKESHI
+                  br
+                  | TSUKAMOTO
+              .company-member-info 
+                p.company-member-info-name
+                  span.company-member-info-name-inline 取締役
+                  | 塚本 岳史
+                p.company-member-info-detail
+                  |  理工学部出身。プログラミングは大学で習得し、エンジニアとしてキャリアをスタート。
+                  br
+                  |  2017年夏、知人の紹介で株式会社イノベーションへ参画。
+                  br
+                  |  2019年7月株式会社アンチパターン入社。
+                  br
+                  |  2020年5月当社取締役に就任。
+          li.company-member-item 
+            .company-member-item-inner 
+              figure.company-member-figure 
+                img(src="/img/yamazaki.jpg", alt="")
+                figcaption 
+                  | HIROFUMI
+                  br
+                  | YAMAZAKI
+              .company-member-info 
+                p.company-member-info-name
+                  span.company-member-info-name-inline 監査役
+                  | 山﨑 浩史
+                p.company-member-info-detail
+                  |  1990年(株)クラレ入社。
+                  br
+                  |  2000年トランス・コスモス株式会社入社。
+                  br
+                  |  2005年株式会社ザッパラス取締役就任。2010年同社監査役就任。
+                  br
+                  |  2013年株式会社バロックジャパンリミテッド入社。
+                  br
+                  |  2018年株式会社イノベーション取締役就任。
+                  br
+                  |  2019年7月当社監査役に就任。

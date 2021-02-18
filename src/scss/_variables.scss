@@ -12,37 +12,43 @@ $color-white: #fff;
 $color-gray: #F5F5F5;
 $color-gray2: #bdbdbd;
 
+// 使ってる
+$color-dark: #00282e;
+
 $font-japanese: 'Noto Sans JP', "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", sans-serif;
 $font-english: 'nobel-bold', 'Noto Sans JP', sans-serif, 'Lato', sans-serif;
 $font-english-regular: 'Nobel-Regular', 'Noto Sans JP', sans-serif, 'Lato', sans-serif;
 $font-number: 'Roboto Condensed', sans-serif;
 
+// responsive
 $mobile: 768px;
-$pc: 960px;
+$pc: 950px;
+
+$media: (
+  'sp': 768px,
+  'pc': 950px,
+  'print': .8,
+);
 
 @mixin mq($type: sp, $rule: null) {
-  @if $type == sp {
-    @if $rule == max or $rule == null {
-      @media screen and (max-width: $mobile - 1) {
-        @content;
-      }
+  @if $type == sp or $type == pc {
+    @if ($type == sp and ($rule == max or $rule == null)) or ($type == pc and ($rule == max)) {
+      $rule: max;
     } @else {
-      @media screen and (min-width: $mobile) {
-        @content;
-      }
+      $rule: min;
     }
-  } @else if $type == pc {
-    @if $rule == min or $rule == null {
-      @media screen and (min-width: $pc) {
-        @content;
-      }
-    } @else {
-      @media screen and (max-width: $pc - 1) {
-        @content;
-      }
+    $breakpoint: map-get($media, $type);
+    @if $rule == max {
+      $breakpoint: $breakpoint - 1;
+    }
+    @media screen and (#{$rule}-width: $breakpoint) {
+      @content;
     }
   } @else if $type == tb {
-    @media screen and (min-width: $mobile) and (max-width: $pc - 1) {
+    $min_breakpoint: map-get($media, sp);
+    $max_breakpoint: map-get($media, pc) - 1;
+
+    @media screen and (min-width: $min_breakpoint) and (max-width: $max_breakpoint) {
       @content;
     }
   } @else if $type == xs {

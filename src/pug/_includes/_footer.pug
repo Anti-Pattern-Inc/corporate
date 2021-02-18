@@ -1,32 +1,42 @@
 footer.footer
-  a(href="#top").arrow.footer_jump
   div.footer__inner
-      div.footer_1
-        div.engineer_blog 
-          a(href="https://medium.com/anti-pattern-engineering",target="_blank")
-            span.engineer_blog_text エンジニアブログ
-            span.engineer_blog_icon
-              img(src="../../img/blog-link-icon.png", alt="エンジニアブログ")
-        div.sns_icons
-          a(href="https://www.facebook.com/Anti-Pattern-Inc-405308950323951",target="_blank")
-            span.sns_icon_item
-              span.sns_logo
-                img(src="../../img/fb-w.png", alt="Facebook")
-              span.sns_name Facebook
-          a(href="https://twitter.com/antipatterninc",target="_blank")
-            span.sns_icon_item
-              span.sns_logo
-                img(src="../../img/tw-w.png", alt="Twitter")
-              span.sns_name Twitter
-          a(href="https://www.linkedin.com/company/anti-pattern/",target="_blank")
-            span.sns_icon_item
-              span.sns_logo.li_logo
-                img(src="../../img/li-w.png", alt="LinkedIn")
-              span.sns_name LinkedIn
-      div.footer_2
-        div.footer_navs
-          span.footer_nav.legal_page_only
+    a(href="#top").arrow.footer_jump
+    div.footer_1
+      div.engineer_blog 
+        a(href="https://medium.com/anti-pattern-engineering",target="_blank")
+          span.engineer_blog_text エンジニアブログ
+          span.engineer_blog_icon
+            img(src="/img/blog-link-icon.png", alt="エンジニアブログ")
+      div.sns_icons
+        a(href="https://www.facebook.com/Anti-Pattern-Inc-405308950323951",target="_blank")
+          span.sns_icon_item
+            span.sns_logo
+              img(src="/img/fb-w.png", alt="Facebook")
+            span.sns_name Facebook
+        a(href="https://twitter.com/antipatterninc",target="_blank")
+          span.sns_icon_item
+            span.sns_logo
+              img(src="/img/tw-w.png", alt="Twitter")
+            span.sns_name Twitter
+        a(href="https://www.linkedin.com/company/anti-pattern/",target="_blank")
+          span.sns_icon_item
+            span.sns_logo.li_logo
+              img(src="/img/li-w.png", alt="LinkedIn")
+            span.sns_name LinkedIn
+    div.footer-nav
+      ul.footer-nav-list
+        if pageID === 'legal'
+          li.footer-nav-item.is-current
             a(href="/legal/") 個人情報の取り扱い等
-          //- span.footer_nav.xxxxx_page_only
-          //-   a(href="/useful_infomation/") お役立ち情報
-        small.copyright ©2021 Copyright Anti-Pattern Inc.
+        else 
+          li.footer-nav-item
+            a(href="/legal/") 個人情報の取り扱い等
+
+        if pageID === 'useful_information'
+          li.footer-nav-item.is-current
+            a(href="/useful_information/") お役立ち情報
+        else 
+          li.footer-nav-item
+            a(href="/useful_information/") お役立ち情報
+
+      small.copyright ©2021 Copyright Anti-Pattern Inc.

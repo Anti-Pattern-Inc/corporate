@@ -7,17 +7,18 @@
     <meta name="format-detection" content="telephone=no"/>
     <title>Anti-Pattern Inc.</title>
     <meta name="description" content="このページは株式会社アンチパターン(英名:Anti-Pattern Inc.)のコーポレートサイトです。経営理念や事業内容、会社概要などをご紹介しています。"/>
-    <link rel="canonical" href="https://anti-pattern.co.jp/"/>
+    <link rel="canonical" href="https://anti-pattern.co.jp/top/"/>
     <link rel="shortcut icon" href="/img/favicon.png"/>
     <link rel="stylesheet" type="text/css" href="/css/main.min.css"/>
     <link rel="preconnect" href="https://fonts.gstatic.com"/>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&amp;display=swap" rel="stylesheet"/>
     <link rel="stylesheet" type="text/css" href="/css/pages/index.min.css"/>
     <script src="/js/jquery-3.5.1.min.js"></script>
+    <script src="/js/main.js"></script>
     <meta property="og:title" content="Anti-Pattern Inc."/>
     <meta property="og:type" content="website"/>
     <meta property="og:image" content="https://anti-pattern.co.jp/img/og-image.jpg"/>
-    <meta property="og:url" content="https://anti-pattern.co.jp/"/>
+    <meta property="og:url" content="https://anti-pattern.co.jp/top/"/>
     <meta property="og:description" content="このページは株式会社アンチパターン(英名:Anti-Pattern Inc.)のコーポレートサイトです。経営理念や事業内容、会社概要などをご紹介しています。"/>
     <meta property="og:site_name" content="Anti-Pattern Inc."/>
     <meta property="og:locale" content="ja"/>
@@ -25,25 +26,31 @@
     <meta name="twitter:card" content="summary_large_image"/>
     <meta name="twitter:site" content=""/>
   </head>
-  <body>
-    <header class="header header_top" name="top" id="top">
-      <div class="header__inner">
-        <div class="header_logoSide">
-          <h1><a href="/"><img src="/img/anti-pattern_logo.svg" alt="株式会社アンチパターン"/></a></h1>
-          <ul class="pc_navs">
-            <li class="pc_nav_item nav_service"><a href="/services/">サービス</a></li>
-            <li class="pc_nav_item nav_company"><a href="/company/">会社概要</a></li>
-          </ul>
+  <body class="top">
+    <header class="header">
+      <div class="header-inner">
+        <div class="header-logo">
+          <h1><img src="/img/anti-pattern_logo.svg" alt="株式会社アンチパターン"/></h1>
         </div>
-        <div class="header_buttonSide"><a class="rounded-btn" href="https://docs.google.com/forms/d/e/1FAIpQLSd0kJB1wJCNdXCi9NDz9OTKuuBllPPylh_jTCNaVZfSdra2RQ/viewform">お問い合わせ</a></div><a class="menu"><span class="menu__line menu__line--top"></span><span class="menu__line menu__line--bottom"></span></a>
-        <nav class="gnav">
-          <div class="gnav__logo"><a href="#"><img src="/img/anti-pattern_logo_white.svg" alt="株式会社アンチパターン"/></a></div>
-          <div class="gnav__wrap">
-            <ul class="gnav__nemu">
-              <li class="gnav__menu__item"><a href="/services/">サービス</a></li>
-              <li class="gnav__menu__item"><a href="/company/">会社概要</a></li>
-              <li class="gnav__menu__item"><a href="https://docs.google.com/forms/d/e/1FAIpQLSd0kJB1wJCNdXCi9NDz9OTKuuBllPPylh_jTCNaVZfSdra2RQ/viewform">お問い合わせ</a></li>
-              <li class="gnav__menu__item nav_legal"><a href="/legal/">個人情報の取り扱い等</a></li>
+        <nav class="header-nav"> 
+          <ul class="header-nav-list">
+            <li class="header-nav-item"><a href="/services/">サービス</a></li>
+            <li class="header-nav-item"><a href="/company/">会社概要</a></li>
+            <li class="header-nav-item"><a href="/news/">ニュース</a></li>
+          </ul>
+        </nav>
+        <div class="header-contact"><a class="rounded-btn" href="https://docs.google.com/forms/d/e/1FAIpQLSd0kJB1wJCNdXCi9NDz9OTKuuBllPPylh_jTCNaVZfSdra2RQ/viewform">お問い合わせ</a></div>
+        <button class="header-hamburger" id="js-gnav-link"><span class="header-hamburger-line -top"></span><span class="header-hamburger-line -bottom"></span></button>
+        <nav class="header-gnav" id="js-gnav">
+          <div class="header-gnav-logo"><a href="#"><img src="/img/anti-pattern_logo_white.svg" alt="株式会社アンチパターン"/></a></div>
+          <div class="header-gnav-inner">
+            <ul class="header-gnav-list">
+              <li class="header-gnav-item -services"><a href="/services/">サービス</a></li>
+              <li class="header-gnav-item -company"><a href="/company/">会社概要</a></li>
+              <li class="header-gnav-item -news"><a href="/news/">ニュース</a></li>
+              <li class="header-gnav-item -contact"><a href="https://docs.google.com/forms/d/e/1FAIpQLSd0kJB1wJCNdXCi9NDz9OTKuuBllPPylh_jTCNaVZfSdra2RQ/viewform">お問い合わせ</a></li>
+              <li class="header-gnav-item -legal"><a href="/legal/">個人情報の取り扱い等</a></li>
+              <li class="header-gnav-item -useful_information"><a href="/useful_information/">お役立ち情報</a></li>
             </ul>
           </div>
         </nav>
@@ -93,18 +100,19 @@
         </div>
       </div>
     </div>
-    <footer class="footer"><a class="arrow footer_jump" href="#top"></a>
-      <div class="footer__inner">
+    <footer class="footer">
+      <div class="footer__inner"><a class="arrow footer_jump" href="#top"></a>
         <div class="footer_1">
-          <div class="engineer_blog"> <a href="https://medium.com/anti-pattern-engineering" target="_blank"><span class="engineer_blog_text">エンジニアブログ</span><span class="engineer_blog_icon"><img src="../../img/blog-link-icon.png" alt="エンジニアブログ"/></span></a></div>
-          <div class="sns_icons"><a href="https://www.facebook.com/Anti-Pattern-Inc-405308950323951" target="_blank"><span class="sns_icon_item"><span class="sns_logo"><img src="../../img/fb-w.png" alt="Facebook"/></span><span class="sns_name">Facebook</span></span></a><a href="https://twitter.com/antipatterninc" target="_blank"><span class="sns_icon_item"><span class="sns_logo"><img src="../../img/tw-w.png" alt="Twitter"/></span><span class="sns_name">Twitter</span></span></a><a href="https://www.linkedin.com/company/anti-pattern/" target="_blank"><span class="sns_icon_item"><span class="sns_logo li_logo"><img src="../../img/li-w.png" alt="LinkedIn"/></span><span class="sns_name">LinkedIn</span></span></a></div>
+          <div class="engineer_blog"> <a href="https://medium.com/anti-pattern-engineering" target="_blank"><span class="engineer_blog_text">エンジニアブログ</span><span class="engineer_blog_icon"><img src="/img/blog-link-icon.png" alt="エンジニアブログ"/></span></a></div>
+          <div class="sns_icons"><a href="https://www.facebook.com/Anti-Pattern-Inc-405308950323951" target="_blank"><span class="sns_icon_item"><span class="sns_logo"><img src="/img/fb-w.png" alt="Facebook"/></span><span class="sns_name">Facebook</span></span></a><a href="https://twitter.com/antipatterninc" target="_blank"><span class="sns_icon_item"><span class="sns_logo"><img src="/img/tw-w.png" alt="Twitter"/></span><span class="sns_name">Twitter</span></span></a><a href="https://www.linkedin.com/company/anti-pattern/" target="_blank"><span class="sns_icon_item"><span class="sns_logo li_logo"><img src="/img/li-w.png" alt="LinkedIn"/></span><span class="sns_name">LinkedIn</span></span></a></div>
         </div>
-        <div class="footer_2">
-          <div class="footer_navs"><span class="footer_nav legal_page_only"><a href="/legal/">個人情報の取り扱い等</a></span></div><small class="copyright">©2021 Copyright Anti-Pattern Inc.</small>
+        <div class="footer-nav">
+          <ul class="footer-nav-list">
+            <li class="footer-nav-item"><a href="/legal/">個人情報の取り扱い等</a></li>
+            <li class="footer-nav-item"><a href="/useful_information/">お役立ち情報</a></li>
+          </ul><small class="copyright">©2021 Copyright Anti-Pattern Inc.</small>
         </div>
       </div>
     </footer>
   </body>
-  <script></script>
-  <script src="/js/main.js"></script>
 </html>
