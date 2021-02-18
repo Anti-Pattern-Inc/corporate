@@ -71,6 +71,44 @@ button {
     }
 }
 
-.container {
-    background-color: #F8F8F8;
+
+/* utility
+--------------------------------------------------------------*/
+.util {
+  &-background-container {
+    padding: 62px 40px 155px;
+    background: #f8f8f8;
+
+    @include mq(tb) {
+      padding: 62px 20px 155px;
+    }
+
+    @include mq(sp) {
+      padding: 34px 20px 88px;
+    }
+  }
+
+  &-background-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 80px 100px 120px;
+    
+    @include mq(tb) {
+      padding: 80px 40px 120px;
+    }
+
+    @include mq(sp) {
+      padding: 24px 20px 80px;
+    }
+  }
+
+  &-section-title {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: $color-blue-main;
+    font-family: $font-english;
+    letter-spacing: 0;
+  }
 }

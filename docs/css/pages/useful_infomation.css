@@ -1,5 +1,4 @@
-/*! anti-pattern_corporate_website v1.0.0 | (c) 2021 Anti-Pattern Inc. |  License | https://github.com/Anti-Pattern-Inc/corporate */
-/* line 61, src/scss/_variables.scss */
+/* line 67, src/scss/_variables.scss */
 .box_base:after {
   position: absolute;
   content: '';
@@ -7,32 +6,32 @@
   z-index: 0;
 }
 
-/* line 67, src/scss/_variables.scss */
+/* line 73, src/scss/_variables.scss */
 .box_red:after {
   background-color: #ED644C;
 }
 
-/* line 70, src/scss/_variables.scss */
+/* line 76, src/scss/_variables.scss */
 .box_light_blue:after {
   background-color: #4FABBA;
 }
 
-/* line 73, src/scss/_variables.scss */
+/* line 79, src/scss/_variables.scss */
 .box_blue:after {
   background-color: #4C83ED;
 }
 
-/* line 76, src/scss/_variables.scss */
+/* line 82, src/scss/_variables.scss */
 .box_brown:after {
   background-color: #C39682;
 }
 
-/* line 79, src/scss/_variables.scss */
+/* line 85, src/scss/_variables.scss */
 .box_grey:after {
   background-color: #454A54;
 }
 
-/* line 61, src/scss/_variables.scss */
+/* line 67, src/scss/_variables.scss */
 .box_base:after {
   position: absolute;
   content: '';
@@ -40,39 +39,29 @@
   z-index: 0;
 }
 
-/* line 67, src/scss/_variables.scss */
+/* line 73, src/scss/_variables.scss */
 .box_red:after {
   background-color: #ED644C;
 }
 
-/* line 70, src/scss/_variables.scss */
+/* line 76, src/scss/_variables.scss */
 .box_light_blue:after {
   background-color: #4FABBA;
 }
 
-/* line 73, src/scss/_variables.scss */
+/* line 79, src/scss/_variables.scss */
 .box_blue:after {
   background-color: #4C83ED;
 }
 
-/* line 76, src/scss/_variables.scss */
+/* line 82, src/scss/_variables.scss */
 .box_brown:after {
   background-color: #C39682;
 }
 
-/* line 79, src/scss/_variables.scss */
+/* line 85, src/scss/_variables.scss */
 .box_grey:after {
   background-color: #454A54;
-}
-
-/* line 4, src/scss/pages/useful_infomation.scss */
-.header {
-  background-color: rgba(0, 0, 0, 0);
-}
-
-/* line 7, src/scss/pages/useful_infomation.scss */
-.header_top {
-  background: #fff;
 }
 
 /* line 10, src/scss/pages/useful_infomation.scss */
@@ -851,7 +840,7 @@
   display: block;
   width: 69px;
   height: 2px;
-  background-color: #00282E;
+  background-color: #00282e;
   position: absolute;
   bottom: -4px;
 }
@@ -864,7 +853,7 @@
 /* line 637, src/scss/pages/useful_infomation.scss */
 .container .company_keyvisual {
   background-color: #EEEEEE;
-  color: #00282E;
+  color: #00282e;
 }
 
 /* line 640, src/scss/pages/useful_infomation.scss */
@@ -914,7 +903,7 @@
   margin-top: 27px;
   font-size: 18px;
   line-height: 44px;
-  color: #00282E;
+  color: #00282e;
   letter-spacing: -3.7px;
 }
 
@@ -933,7 +922,7 @@
 /* line 684, src/scss/pages/useful_infomation.scss */
 .outline_table_item {
   font-size: 13px;
-  color: #00282E;
+  color: #00282e;
   width: 440px;
   border-top: solid 2px #eeeeee;
   border-bottom: solid 2px #eeeeee;
@@ -1131,7 +1120,7 @@
   /* line 834, src/scss/pages/useful_infomation.scss */
   .outline_table_item {
     font-size: 13px;
-    color: #00282E;
+    color: #00282e;
     width: 440px;
     border-top: solid 2px #eeeeee;
     border-bottom: solid 2px #eeeeee;
@@ -1167,11 +1156,6 @@
 /* line 865, src/scss/pages/useful_infomation.scss */
 .nav_company:after {
   display: none;
-}
-
-/* line 868, src/scss/pages/useful_infomation.scss */
-.header {
-  background-color: #f8f8f8;
 }
 
 /* line 871, src/scss/pages/useful_infomation.scss */
@@ -1284,7 +1268,7 @@
   padding-bottom: 5px;
 }
 
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 950px) {
   /* line 955, src/scss/pages/useful_infomation.scss */
   .footer {
     padding-bottom: 52px;

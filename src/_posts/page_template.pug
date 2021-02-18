@@ -1,0 +1,92 @@
+//- 一覧ページテンプレート
+extends ../pug/_includes/_layout.pug
+
+append variables
+  //- Required
+  - var pageID = articleList.key;
+  - var pageTitle = pageID === 'news' ? 'ニュース' : 'お役立ち情報';
+  - var pageDescription = site.description;
+  //- Optional
+  - var pageOgpImage = site.ogpImage
+  - var pageOgpType = "website";
+
+block styles
+    link(rel="stylesheet" type="text/css" href="/css/pages/archive.min.css")
+
+block append scripts
+    script(src='/js/html_scd.js')
+
+block content
+  if pageID === "useful_information"
+    section.keyvisual
+      h1
+        span.key_title_main(aria-hidden="true")
+          | USEFUL
+          br.sp-visible
+          | INFORMATION
+        span.key_title_sub お役立ち情報
+
+    .wrapper.archive-wrapper
+      section.archive-card-list
+        each item in articleList.meta
+          article.archive-card-item
+            a.archive-card-item-link(href=item.link)
+              figure.archive-card-figure(style="background-image:url(" + (item.thumbnail ? item.thumbnail : '/img/posts/noimage.png' ) + ")")
+              p.archive-card-date
+                time #{item.date}
+              h2.archive-card-title タイトル： #{item.title}
+              p.archive-card-excerpt ディスクリプション: #{item.description}
+  else
+    section.keyvisual
+      h1
+        span.key_title_main(aria-hidden="true") NEWS
+        span.key_title_sub お知らせ
+    .wrapper.archive-wrapper
+      section.archive-list
+        each item in articleList.meta
+          article.archive-item
+            a.archive-item-link(href=item.link)
+              .archive-item-link-header
+                p.archive-date
+                  time #{item.date}
+                h2.archive-title タイトル： #{item.title}
+              p.archive-excerpt ディスクリプション: #{item.description}
+
+      if total > 1
+        .archive-pagination
+          - var amount = 4
+          - var ellipsis = 4
+          - var arrows
+
+          //- prev arrow
+          if current > 1
+            a(href='/'+articleList.key+'/paged/'+(current-1) title="Prev page").archive-pagination-arrow.-prev
+          else
+
+          ul.archive-pagination-list
+            //- before ellipsis
+            - for (var index = 1; index <= total; index++)
+              if (index === current)
+                li.archive-pagination-item.is-active
+                  a(href='/'+articleList.key+'/paged/'+index  title="Current page #{index}").archive-pagination-number= index
+              
+              //- 最初と最後以外　かつ　現在ページの前後1ページの時
+              //- else if current !== 1 && current !== total && ( index === current + 1 || index === current - 1)
+              //-   li.archive-pagination-item
+              //-     a(href='/'+articleList.key+'/paged/'+index  title="Current page #{index}").archive-pagination-number= index
+
+              else if (index === ellipsis)
+                li.archive-pagination-item
+                  a(href="#" title="Show more").archive-pagination-number.is-collapsed ...
+              else
+                li.archive-pagination-item
+                  a(href='/'+articleList.key+'/paged/'+index title="Go to page #{index}").archive-pagination-number= index
+            //- after ellipsis
+            - for (var index = amount + 1; index <= total; index++)
+              li.archive-pagination-item
+                a(href='/'+articleList.key+'/paged/'+index title="Go to pagе #{index}").archive-pagination-number= index
+
+          //- next arrow
+          if current < total
+            a(href='/'+articleList.key+'/paged/'+(current+1) title="Next page").archive-pagination-arrow.-next
+          else

@@ -1,0 +1,246 @@
+@import "../variables";
+@import "../mixins";
+
+/*==========================================================================
+# news
+========================================================================== */
+.news {
+  .container,
+  .wrapper {
+    background: #f8f8f8;
+  }
+}
+
+/*==========================================================================
+# archive
+========================================================================== */
+.archive {
+  &-wrapper {
+    padding-bottom: 158px;
+
+    @include mq(sp) {
+      padding-bottom: 146px;
+    }
+  }
+
+  /* normal
+  --------------------------------------------------------------*/
+  &-list {
+    border-top: solid 4px #eee;
+    max-width: 900px;
+    margin: 80px auto 0;
+
+    @include mq(sp) {
+      margin-top: 52px;
+    }
+  }
+
+  &-item {
+    border-bottom: solid 4px #eee;
+    letter-spacing: .05em;
+    line-height: 1.84;
+  }
+
+  &-item-link {
+    display: block;
+    padding: 40px 12px;
+
+    @include mq(sp) {
+      padding: 24px 10px;
+    }
+  }
+
+  &-item-link-header {
+    display: flex;
+    align-items: center;
+  }
+
+  &-date {
+    font-size: 13px;
+    font-weight: bold;
+    color: $color-blue-main;
+    font-family: $font-english;
+  }
+
+  &-title {
+    font-size: 13px;
+    margin-left: 1em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  &-excerpt {
+    font-size: 13px;
+    overflow: hidden;
+
+    @include mq(sp,min) {
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    @include mq(sp) {
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+    }
+  }
+
+  /* card
+  --------------------------------------------------------------*/
+  &-card-list {
+    @include mq(sp,min) {
+      display: flex;
+      margin: -45px -20px;
+      padding-top: 105px;
+      flex-wrap: wrap;
+    }
+
+    @include mq(sp) {
+      padding-top: 62px;
+    }
+  }
+
+  &-card-item {
+    letter-spacing: .05em;
+    line-height: 1.84;
+
+    @include mq(sp,min) {
+      padding: 45px 20px;
+      flex: 0 0 33.3333%;
+    }
+
+    @include mq(sp) {
+      & + & {
+        margin-top: 60px;
+      }
+    }
+  }
+  
+  &-card-item-link {
+    display: block;
+
+    @include mq(pc) {
+      transition: opacity .3s, box-shadow .3s;
+      box-shadow: 0 0 15px rgba(#000,0);
+
+      &:hover {
+        opacity: .7;
+        box-shadow: 0 0 15px rgba(#000,.15);
+      }
+    }
+  }
+
+  &-card-figure {
+    padding-top: 75%;
+    margin: 0;
+    background-size: cover;
+    background-position: center center;
+  }
+  
+  &-card-date {
+    font-size: 13px;
+    font-weight: bold;
+    color: $color-blue-main;
+    font-family: $font-english;
+    margin-top: 12px;
+  }
+  
+  &-card-title {
+    font-size: 13px;
+    margin-top: 4px;
+  }
+  
+  &-card-excerpt {
+    font-size: 13px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+  }
+
+  /* pagination
+  --------------------------------------------------------------*/
+  &-pagination {
+    margin-top: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include mq(sp) {
+      margin-top: 38px;
+    }
+  }
+
+  &-pagination-list {
+    display: flex;
+    margin: 0 12px;
+  }
+
+  &-pagination-item {
+    a {
+      display: block;
+      font-size: 24px;
+      color: #999;
+      font-weight: bold;
+      font-family: $font_english;
+      text-align: center;
+      width: 38px;
+      height: 38px;
+      line-height: 38px;
+
+      @include mq(pc) {
+        transition: color .3s;
+  
+        &:hover {
+          color: $color-blue-main;
+        }
+      }
+    }
+
+    &.is-active {
+      a {
+        pointer-events: none;
+        color: $color-blue-main;
+      }
+    }
+  }
+
+  &-pagination-arrow {
+    display: block;
+    width: 30px;
+    height: 8px;
+    border-bottom: solid 2px #999;
+    border-top: solid 2px transparent;
+
+    @include mq(pc) {
+      transition: border-color .3s;
+
+      &:hover {
+        border-bottom-color: $color-blue-main;
+      }
+    }
+
+    &.-prev {
+      border-left: solid 3px #999;
+      transform: skewX(-36deg);
+
+      @include mq(pc) {
+        &:hover {
+          border-left-color: $color-blue-main;
+        }
+      }
+    }
+    
+    &.-next {
+      border-right: solid 3px #999;
+      transform: skewX(36deg);
+
+      @include mq(pc) {
+        &:hover {
+          border-right-color: $color-blue-main;
+        }
+      }
+    }
+  }
+}

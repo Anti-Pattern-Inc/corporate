@@ -1,12 +1,12 @@
 
 @import "../variables";
 @import "../mixins";
-.header {
-    background-color:rgba(0,0,0,0);
-}
-.header_top {
-    background: #fff;
-}
+// .header {
+//     background-color:rgba(0,0,0,0);
+// }
+// .header_top {
+//     background: #fff;
+// }
 .background {
     background: #f8f8f8;
     .wrapper {
@@ -29,7 +29,7 @@
     position: relative;
     padding: 224px 24px 217px 24px;
     text-align: center;
-    color: #00282e;
+    color: $color-dark;
     background-color: transparent;
     background-image : url("/img/hero_img.png") ;
     background-size: cover;
@@ -380,7 +380,7 @@
         position: relative;
         padding: 121px 24px 217px 24px;
         text-align: center;
-        color: #00282e;
+        color: $color-dark;
         background-color: transparent;
         background-image : url("/img/hero_img.png") ;
         background-size: cover;
@@ -627,7 +627,7 @@
   display:block;
   width:69px;
   height:2px;
-  background-color: #00282E;
+  background-color: $color-dark;
   position:absolute;
   bottom:-4px;
   // left:-5px;
@@ -636,7 +636,7 @@
   background:  #fff;
   .company_keyvisual {
     background-color: #EEEEEE;
-    color: #00282E;
+    color: $color-dark;
     h2 {
       font-size: 50px;
       margin-bottom: 42px;
@@ -672,7 +672,7 @@
     margin-top: 27px;
     font-size: 18px;
     line-height: 44px;
-    color: #00282E;
+    color: $color-dark;
     letter-spacing: -3.7px;
   }
 }
@@ -683,7 +683,7 @@
 }
 .outline_table_item {
   font-size: 13px;
-  color: #00282E;
+  color: $color-dark;
   width: 440px;
   border-top: solid 2px #eeeeee;
   border-bottom: solid 2px #eeeeee;
@@ -833,7 +833,7 @@
   }
   .outline_table_item {
     font-size: 13px;
-    color: #00282E;
+    color: $color-dark;
     width: 440px;
     border-top: solid 2px #eeeeee;
     border-bottom: solid 2px #eeeeee;
@@ -865,9 +865,9 @@
 .nav_company:after {
   display: none;
 }
-.header {
-  background-color: #f8f8f8;
-}
+// .header {
+//   background-color: #f8f8f8;
+// }
 .wrapper {
   margin-top: 105px;
   background-color: #fff;

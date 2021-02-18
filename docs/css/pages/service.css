@@ -1,5 +1,4 @@
-/*! anti-pattern_corporate_website v1.0.0 | (c) 2021 Anti-Pattern Inc. |  License | https://github.com/Anti-Pattern-Inc/corporate */
-/* line 61, src/scss/_variables.scss */
+/* line 67, src/scss/_variables.scss */
 .box_base:after {
   position: absolute;
   content: '';
@@ -7,32 +6,32 @@
   z-index: 0;
 }
 
-/* line 67, src/scss/_variables.scss */
+/* line 73, src/scss/_variables.scss */
 .box_red:after {
   background-color: #ED644C;
 }
 
-/* line 70, src/scss/_variables.scss */
+/* line 76, src/scss/_variables.scss */
 .box_light_blue:after {
   background-color: #4FABBA;
 }
 
-/* line 73, src/scss/_variables.scss */
+/* line 79, src/scss/_variables.scss */
 .box_blue:after {
   background-color: #4C83ED;
 }
 
-/* line 76, src/scss/_variables.scss */
+/* line 82, src/scss/_variables.scss */
 .box_brown:after {
   background-color: #C39682;
 }
 
-/* line 79, src/scss/_variables.scss */
+/* line 85, src/scss/_variables.scss */
 .box_grey:after {
   background-color: #454A54;
 }
 
-/* line 61, src/scss/_variables.scss */
+/* line 67, src/scss/_variables.scss */
 .box_base:after {
   position: absolute;
   content: '';
@@ -40,45 +39,34 @@
   z-index: 0;
 }
 
-/* line 67, src/scss/_variables.scss */
+/* line 73, src/scss/_variables.scss */
 .box_red:after {
   background-color: #ED644C;
 }
 
-/* line 70, src/scss/_variables.scss */
+/* line 76, src/scss/_variables.scss */
 .box_light_blue:after {
   background-color: #4FABBA;
 }
 
-/* line 73, src/scss/_variables.scss */
+/* line 79, src/scss/_variables.scss */
 .box_blue:after {
   background-color: #4C83ED;
 }
 
-/* line 76, src/scss/_variables.scss */
+/* line 82, src/scss/_variables.scss */
 .box_brown:after {
   background-color: #C39682;
 }
 
-/* line 79, src/scss/_variables.scss */
+/* line 85, src/scss/_variables.scss */
 .box_grey:after {
   background-color: #454A54;
-}
-
-/* line 4, src/scss/pages/service.scss */
-.header {
-  background-color: rgba(0, 0, 0, 0);
-  padding-top: 22px;
 }
 
 /* line 11, src/scss/pages/service.scss */
 .gnav__nemu {
   margin-bottom: 0px;
-}
-
-/* line 14, src/scss/pages/service.scss */
-.header_top {
-  background: #fff;
 }
 
 /* line 17, src/scss/pages/service.scss */
@@ -809,11 +797,6 @@
   }
 }
 
-/* line 602, src/scss/pages/service.scss */
-.header {
-  background-color: #EEEEEE;
-}
-
 /* line 605, src/scss/pages/service.scss */
 .wrapper {
   max-width: 1220px;
@@ -1091,7 +1074,7 @@ z
 
 /* line 801, src/scss/pages/service.scss */
 .keyvisual .nav_service {
-  border-bottom: solid 1px #00282E;
+  border-bottom: solid 1px #00282e;
 }
 
 /* line 807, src/scss/pages/service.scss */
@@ -1105,7 +1088,7 @@ z
   display: block;
   width: 62px;
   height: 2px;
-  background-color: #00282E;
+  background-color: #00282e;
   position: absolute;
   bottom: -8px;
 }
@@ -1128,10 +1111,6 @@ z
 }
 
 @media (max-width: 950px) {
-  /* line 832, src/scss/pages/service.scss */
-  .header {
-    padding-top: 16px;
-  }
   /* line 835, src/scss/pages/service.scss */
   .wrapper {
     padding-bottom: 66px;

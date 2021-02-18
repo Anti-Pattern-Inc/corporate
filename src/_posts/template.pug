@@ -1,0 +1,58 @@
+extends ../pug/_includes/_layout.pug
+
+append variables
+  //- Required
+  - var pageID = meta.postType;
+  - var pageTitle = pageID === 'news' ? 'ニュース' : 'お役立ち情報';
+  - var pageDescription = site.description;
+  //- Optional
+  - var pageOgpImage = site.ogpImage
+  - var pageOgpType = "website";
+
+block styles
+    link(rel="stylesheet" type="text/css" href="/css/pages/detail.min.css")
+
+block append scripts
+    script(src='/js/html_scd.min.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/dompurify/2.2.6/purify.min.js')
+
+block content 
+  section.keyvisual
+    if pageID === "useful_information"
+      p
+        span.key_title_main(aria-hidden="true")
+          | USEFUL
+          br.sp-visible
+          | INFORMATION
+        span.key_title_sub お役立ち情報
+    else 
+      p 
+        span.key_title_main(aria-hidden="true") NEWS
+        span.key_title_sub お知らせ
+
+  article.detail-container
+    .detail-inner
+      .detail-header
+        p.detail-header-date 
+          time #{meta.date}
+        h1.detail-header-title #{meta.title}
+        //- .detail-container
+      .detail-content#js-detail
+      .detail-share 
+        - var shareURL = encodeURIComponent("https://anti-pattern.co.jp")
+        - var shareText = encodeURIComponent(meta.title + " | 株式会社アンチパターン")
+        span.detail-share-label Share on
+        ul.detail-share-list 
+          li.detail-share-item
+            a.detail-share-item-link(href="https://www.facebook.com/sharer.php?src=bm&u="+shareURL+"&t="+shareText target="_blank" rel="noopener noreferrer")
+              img(src="/img/fb-g.png", alt="Facebook")
+          li.detail-share-item
+            a.detail-share-item-link(href="https://twitter.com/intent/tweet?url="+shareURL+"&text="+shareText+"&via=antipatterninc" target="_blank" rel="noopener noreferrer")
+              img(src="/img/tw-g.png", alt="Twitter")
+          li.detail-share-item.-linkedin
+            a.detail-share-item-link(href="http://www.linkedin.com/shareArticle?mini=true&url="+shareURL target="_blank" rel="noopener noreferrer")
+              img(src="/img/li-g.png", alt="LinkedIn")
+
+  script.
+    const mdData = '#{mdData}'
+    document.getElementById('js-detail').innerHTML = DOMPurify.sanitize(htmlScd(mdData))
